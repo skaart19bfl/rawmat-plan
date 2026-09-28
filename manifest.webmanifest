@@ -1,0 +1,9 @@
+{
+  "name": "Rawmat Plan",
+  "short_name": "Rawmat Plan",
+  "start_url": "./#go",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#162C9A",
+  "icons": [{ "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }]
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rawmat Plan</title>
+<meta name="apple-mobile-web-app-title" content="Rawmat Plan">
+<meta name="application-name" content="Rawmat Plan">
+<meta name="theme-color" content="#162C9A">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+  :root{color-scheme:light}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F4F7FC;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:#2E2E2E;padding:16px;box-sizing:border-box}
+  main{background:#fff;border-radius:16px;box-shadow:0 8px 30px rgba(22,44,154,.12);padding:28px 24px;max-width:360px;width:100%;text-align:center}
+  img{width:120px;height:auto}
+  h1{margin:4px 0 0;font-size:30px;line-height:1.1;color:#0060C4;letter-spacing:.5px}
+  h1 span{display:block;font-size:20px;color:#59BB1E}
+  a{display:block;margin-top:18px;background:#162C9A;color:#fff;text-decoration:none;font-weight:600;padding:12px;border-radius:10px}
+  p{margin:14px 0 0;color:#5E6674;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <img src="apple-touch-icon.png" alt="" width="120" height="120">
+  <h1>Rawmat<span>Plan</span></h1>
+  <a id="go" href="https://script.google.com/macros/s/AKfycby2ZWv-vbLm_eCtyjQRgf8cDNNa2WvsdJlN8dM7_LC1Ejvg83WwJXw7cEBM5_7Ks62OLQ/exec">เปิด Rawmat Plan</a>
+  <p>iPhone: กดปุ่มแชร์ → “เพิ่มไปยังหน้าจอโฮม” ที่หน้านี้ เพื่อได้ไอคอนแอป</p>
+</main>
+<script>
+  // opened from the Home Screen icon → go straight to the app; opened in a normal tab → stay so it can be added to Home Screen
+  if (navigator.standalone || matchMedia('(display-mode: standalone)').matches || location.hash === '#go') location.replace(document.getElementById('go').href);
+</script>
+</body>
+</html>
